@@ -18,7 +18,7 @@ public class DatabaseConfiguration {
 
     public DatabaseConfiguration(@Value("${datasource.url}") String url,
                                  @Value("${datasource.username}") String username,
-                                 @Value("${datasource.password}") String password) {) {
+                                 @Value("${datasource.password}") String password){
         dataSource = new BasicDataSource();
         dataSource.setUrl(url);
         dataSource.setUsername(username);
@@ -27,4 +27,4 @@ public class DatabaseConfiguration {
         System.out.println(url + " : " + username + " : " + password);
     }
 }
-}
+
